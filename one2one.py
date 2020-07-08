@@ -44,7 +44,9 @@ class License(Base):
 # h1 = session.query(Husband).filter_by(name='h')
 w1 = session.query(Wife).filter_by(name='w').first()
 l1 = session.query(License).filter_by(name='l1').first()
+h1 = w1.husband
 
+# 可以通过mysql日志发现，sql分执行，而不是，表连接执行
 
 # 在不使用物理外键的情况下，自行进行级联删除或者级联更新，或者不删除，不更新，减少数据库死锁的可能新
 

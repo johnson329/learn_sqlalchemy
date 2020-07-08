@@ -52,7 +52,7 @@ ss.add(l1)
 ss.commit()
 # 删除
 
-# l1_q.first().right = []
+l1_q.first().right = []
 l1_q.delete()
 
 ss.commit()

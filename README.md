@@ -25,3 +25,20 @@ https://mp.weixin.qq.com/s?__biz=MjM5Njc0MjIwMA==&mid=2649655932&idx=2&sn=ee6a40
 
 orm定义部分不变，但是数据库手动生成，没有外键，那么on_delete级联删除失效
 
+
+#查看mysql查询日志
+
+```mysql
+
+show variables like '%general_log%';
+
+```
+
+
+#开启mysql查询日志
+
+```mysql
+
+set global general_log = on;
+
+```
